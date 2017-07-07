@@ -1,0 +1,417 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@charset "utf-8";
+/* CSS Document */
+h2{
+	margin-bottom:20px;
+}
+.topnavwrapper{
+	background-color:white;
+	height:auto;	
+	width:960px;
+	margin:0 auto;
+	padding:0 0 10px 0;
+	z-index:-30;
+	position:relative;
+}
+.wrapper{
+	background-color:rgba(255,255,255,0.90);
+	
+	width:960px;
+	margin:0 auto;
+	padding:0 0 10px 0;
+	z-index:-30;
+	position:relative;	
+}
+.topwrapper{
+	background-color:rgba(255,255,255,0.90);
+	border-left:1px solid white;
+	border-right:1px solid white;
+	width:960px;
+	margin:0 auto;
+	padding:0 0 10px 0;
+	z-index:-30;
+	position:relative;	
+}
+.background{
+	background:url(images/background.jpg);
+	opacity:0.8;
+	margin:-8px;
+	min-height:1000px;
+	padding:20px 0 20px 0;
+	z-index:-30;
+}
+body {
+	/*background: -webkit-linear-gradient(white, #E3E3E3); /* For Safari 5.1 to 6.0 
+    background: -o-linear-gradient(white,  #E3E3E3); /* For Opera 11.1 to 12.0 
+    background: -moz-linear-gradient(white,  #E3E3E3); /* For Firefox 3.6 to 15 
+    background: linear-gradient(white,  #E3E3E3); /* Standard syntax (must be last) */
+	
+	z-index:-10;
+	color: #222;
+	font-family: cabin-sketch;
+	font-weight: 400;
+	font-size: 1.2em;
+	font-style: normal;
+}
+
+#main {
+	width: 860px;
+	padding:0;
+	margin:-24px auto 20px auto;	
+}
+#mainCategory{
+	width: 860px;
+	padding:0;
+	margin:0px auto 0px auto;	
+}
+#mainpro{
+	width: 860px;
+	min-height:800px;
+	padding:0;
+	margin:0px auto 0px auto;
+}
+#mainContact {
+	width: 960px;
+	padding:0;
+	margin:-24px auto 20px auto;	
+}
+#mainDeals {
+	width: 960px;
+	padding:0;
+	margin:-24px auto 20px auto;	
+}
+#banner{
+
+	background-image:url(images/header2.jpg);
+	
+	 background-position: 0px 0px;
+	border: 1px solid #dedede;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	width: 960px;
+	height: 275px;
+	margin: 0 auto;
+}
+	
+.title{
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-size: 70px;
+	color: white;
+	padding: auto 0 auto;
+	padding-left: 5%;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	}
+
+.searchbox {
+	float: right;
+	
+	padding: 10px 10px 10px 0px;
+}
+.searchButton{width:100px;}
+/******************/
+/****Slide Show****/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+body, figure { 
+  margin: 0;
+ 
+}
+div#captioned-gallery { 
+  width: 100%; 
+  overflow: hidden; 
+  
+  
+}
+figure.slider { 
+  position: relative; 
+  width: 500%;
+  font-size: 0; 
+  animation: 25s slidy infinite; 
+
+}
+figure.slider figure { 
+  width: 20%; 
+  height: auto;
+  display: inline-block; 
+  position: inherit; 
+}
+
+figure.slider img {
+	width: 100%;
+	height: auto; 
+	margin-top:50px;	
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+figure.slider figure figcaption { 
+  position: absolute; 
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; 
+  width: 100%;
+  font-size: 2rem; 
+  padding: .6rem; 
+}
+
+#wrapper {
+    max-width: 1124px;
+    padding: 0 20px 40px 20px;
+    margin: auto;
+}
+/******************/
+/****Categories****/
+#results{
+	margin:0;
+	padding:0;
+}
+#output{	
+	margin:0;
+	padding:0;
+}
+
+.dropdown {
+    position: relative;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	margin:20px 0 20px 0;
+	
+	
+	display:inline-block;
+}
+.dropdown ul{
+	
+	margin:0 30px;
+	
+	padding:0;
+}
+.dropdown ul > li{
+	display:block;
+	position:relative;
+	margin:0;
+	padding:0;
+	
+
+}
+
+.dropdown img{
+	width:150px;
+	height:230px;
+}
+.dropdown ul > li > div{
+	display:inline;
+	position: absolute;
+	visibility: hidden;
+	font-size:15px;
+	
+	width:0px;
+	height:215px;
+	padding:5px 10px 10px 10px;
+	text-align:center;
+	z-index:30;
+	
+	border: 1px solid #dedede;
+	list-style:none;
+	background-color:white;
+	opacity:0.91;
+	
+}
+.dropdown ul > li:hover >div{
+	margin-left:-152px;
+	visibility:visible;
+	overflow:hidden;
+	
+	width: 130px;
+	max-height:213px;
+	
+	-ms-transition: width 0.3s;
+	-o-transition: width 0.3s;
+	-transition: width 0.3s;
+	 -webkit-transition: width 0.3s;
+	 -moz-transition:width 0.3s;
+}
+#bntAddTocart{
+	width:100px;
+	margin:0;
+	padding:0;
+	background-color:#421B1C;
+	color:white;
+	height:28px;
+	opacity:0.8;
+	cursor:pointer;
+}
+.btnmoreInfo{
+	width:100px;
+	margin:-0;
+	padding:0;
+	background-color:grey;
+
+	color:white;
+	height:28px;
+	cursor:pointer;		
+}
+
+
+/******************/
+/******login*******/
+#login_modal {
+    cursor:move;
+    background:white;
+    margin:auto;
+    width:400px;
+    margin-top:-100px;
+    height:260px;
+    position:relative;
+}
+#login_modalForm {
+    background:white;
+	cursor:default;
+    margin:auto;
+
+    width:402px;
+    height:258px;
+    position:relative;
+    border:thin solid #cecece;
+    
+    left:-2px;
+}
+#close-button {
+    position:absolute;
+    right:10px;
+    top:3px;
+    color:#cecece;
+    font-size:18px;
+    text-decoration:none;
+}
+#close-button:hover {
+    color: #e55753;
+    text-decoration:none;
+}
+
+#login_modal ul {
+    margin:0 10px;
+    width:300px;
+    overflow:hidden;
+}
+#login_modal input[type=text], input[type=password] {
+    height:25px;
+    width:280px;
+    border:thin solid #ced1d1;
+    outline-width:thick;
+    outline-color:#79c3e4;
+}
+#login_modal input[type=submit],input[type=reset]{
+    float:right;
+    margin-top:30px;
+    margin-right:5px;
+}
+#login_modal li {
+    display:block;
+    height:35px;
+    line-height:45px;
+    margin-left:5px;
+}
+#login_modal h4 {
+
+    font-weight:normal;
+    color:#6f7070;
+    margin-top:13px;
+}
+#login_modal li:first-child h4 {
+    margin-top:20px;
+}
+.btn_primary{
+	width:100px;
+	line-height:25px;
+	cursor:pointer;
+	color:white;
+	opacity:0.9;
+	border:1px solid grey;
+	background-color:green;
+}
+.btn{
+	width:100px;
+	line-height:25px;
+	cursor:pointer;
+	color:white;
+	border:1px solid grey;
+	background-color:#6394F8;
+}
+/******************/
+/******Signup******/
+#signup_modal {
+    cursor:move;
+    background:white;
+    margin:auto;
+    width:400px;
+    margin-top:-150px;
+    height:450px;
+    border-radius:3px;
+    box-shadow:0px 3px 5px #d4e0e8;
+    border-bottom:thin solid #cecece;
+    position:relative;
+}
+#signup_modalForm {
+	cursor:pointer;
+    background:white;
+    margin:auto;
+    width:403px;
+    height:450px;
+    position:relative;
+    border:thin solid #cecece;
+    box-shadow:3px 0px 7px 1px #d4e0e8;
+    border-radius:3px;
+    left:-2px;
+}
+#signup_modal ul {
+    margin:0 10px;
+    width:300px;
+    overflow:hidden;
+}
+#signup_modal input[type=text], input[type=password] {
+    height:25px;
+    width:280px;
+    border:thin solid #ced1d1;
+    outline-width:thick;
+    outline-color:#79c3e4;
+}
+#signup_modal input[type=submit],input[type=reset]{
+    float:right;
+    margin-top:30px;
+    margin-right:5px;
+}
+#signup_modal li {
+    display:block;
+    height:35px;
+    line-height:45px;
+    margin-left:5px;
+}
+#signup_modal h4 {
+	text-align:left;
+    font-weight:normal;
+    color:#6f7070;
+    margin-top:13px;
+}
+#signup_modal li:first-child h4 {
+    margin-top:20px;
+}
+/******************/
+/******Footer******/
+#footer {
+	background-color:white;
+	border-top: 1.5px solid #B5B5B5;
+	text-align:center;
+	color:#421B1C;
+	line-height:70px;
+	margin:100px auto -10px auto;
+	width:960px;
+}
+

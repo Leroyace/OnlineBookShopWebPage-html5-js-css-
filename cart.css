@@ -1,0 +1,142 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container {
+  margin: 75px 0 0 313px;
+  width: 80%;
+  position:absolute;
+}
+
+.badge {
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  padding: 3px 7px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+#tblCart{
+	width:400px;
+}
+.shopping-cart {
+	background-color:rgba(255,255,255,0.95);
+	border:1.5px solid #421B1C;
+  margin-right:100px;
+  margin-top:-35px;
+  float: right;
+  min-width: 400px;
+  width:auto;
+  position: absolute;
+  border-radius: 3px;
+  padding: 20px;
+}
+.shopping-cart .shopping-cart-header {
+  border-bottom: 1px solid #E8E8E8;
+  padding-bottom: 15px;
+  
+}
+.shopping-cart .shopping-cart-header .shopping-cart-total {
+  float: right;
+}
+.shopping-cart .shopping-cart-items {
+  padding-top: 20px;
+  
+  
+}
+.shopping-cart .shopping-cart-items li {
+  margin-bottom: 18px;
+}
+.shopping-cart .shopping-cart-items img {
+  float: left;
+  margin-right: 12px;
+}
+.shopping-cart .shopping-cart-items .item-name {
+  display: block;
+  padding-top: 10px;
+  font-size: 14px;
+}
+.shopping-cart .shopping-cart-items .item-price {
+  color: #6394F8;
+  margin-right: 8px;
+}
+.shopping-cart .shopping-cart-items .item-quantity {
+  color: #ABB0BE;
+}
+
+.shopping-cart:after {
+  bottom: 100%;
+  left: 89%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: white;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.cart-icon {
+  color: #515783;
+  font-size: 24px;
+  margin-right: 7px;
+  float: left;
+}
+
+.buttonCart {
+  background: #6394F8;
+  color: white;	
+  text-align:center;
+  text-decoration: none;
+  display: inline-block;
+  border:1px solid grey;
+  border-radius: 3px;
+  font-size: 16px;
+  margin: 10px 0 0px 40px;
+  padding:10px 20px 10px 20px;
+  width:100px;
+  height:20px;
+}
+.btnCartQty {
+  background: #FFFFFF;
+  color: black;	
+  text-align:center;
+  text-decoration: none;
+  display: inline-block;
+  border:1px solid grey;
+  border-radius: 3px;
+  font-size: 13px;
+  margin-left:0px;
+  margin-top:10px;
+  width:50px;
+  height:20px;
+}
+.btnCartDel {
+  background: #FF0004;
+  color: white;	
+  text-align:center;
+  text-decoration: none;
+  display: inline-block;
+  border:1px solid grey;
+  border-radius: 3px;
+  font-size: 13px;
+  margin-left:2px;
+  margin-top:10px;
+  width:50px;
+  height:20px;
+}
+
+.button:hover {
+  background: #729ef9;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

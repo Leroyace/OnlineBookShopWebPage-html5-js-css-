@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* CSS Document */
+
+/****Top Navigation****/
+	nav[role="top"]  {
+		background-color:rgba(255,255,255,0.2);
+		box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+		color: #888;
+		display: block;
+		overflow: hidden;
+		width:960px;
+		
+		text-shadow: 0px 0px;
+		text-align: left;
+		margin: -5px auto 0 auto;
+		
+	}
+
+	nav[role="top"] ul {
+		
+		margin:0;
+		padding:5px 10px 0 0;
+	}
+	nav[role="top"] ul h1{
+		float:left;
+		
+		font-size:50px;
+		color:#421B1C;
+		margin:15px 15px 25px 25px;	
+	}
+	
+	
+	nav[role="top"] ul li {
+		display: inline-block;
+		list-style-type: none;
+		float:right;
+		-webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s; 
+    }
+      
+	nav[role="top"] > ul > li > a > .caret {
+        border-top: 4px solid #aaa;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        content: "";
+        display: inline-block;
+        height: 0;
+        width: 0;
+        vertical-align: middle;
+  
+        -webkit-transition: color 0.1s linear;
+          -moz-transition: color 0.1s linear;
+        -o-transition: color 0.1s linear;
+          transition: color 0.1s linear; 
+      }
+
+	nav[role="top"] > ul > li > a {
+        color:#421B1C; /*#421B1C*/
+        display: block;
+        line-height: 25px;
+		font-size:15px;
+		
+        padding: 4px 12px;
+		text-align:left;
+		width:80px;
+        text-decoration: none;
+      }
+
+	nav[role="top"] > ul > li:hover {
+        }
+	nav[role="top"] > ul > li:hover > a {
+          color: #E3E3E3;
+		  font-size:20px;
+		  
+         }
+
+/****Main Navigation****/
+nav[role="main"] {
+	background-color: #FFFFFF;
+	border: 1px solid #dedede;
+	font-size: 1em;
+	box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+	color: #888;
+	display: block;
+	overflow: hidden;
+	width: 960px;
+	text-shadow: 0px 0px;
+	text-align: left;
+	margin: -10px auto 0 auto;
+		
+	
+	
+}
+
+
+
+  nav[role="main"] ul {
+    margin: 0;
+    padding: 0;
+  }
+
+    nav[role="main"] ul li {
+      display: inline-block;
+      list-style-type: none;
+      
+      -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s; 
+    }
+      
+      nav[role="main"] > ul > li > a > .caret {
+        border-top: 4px solid #aaa;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+        content: "";
+        display: inline-block;
+        height: 0;
+        width: 0;
+        vertical-align: middle;
+  
+        -webkit-transition: color 0.1s linear;
+          -moz-transition: color 0.1s linear;
+		-o-transition: color 0.1s linear;
+          transition: color 0.1s linear; 
+      }
+
+      nav[role="main"] > ul > li > a {
+        color:#421B1C;
+        display: block;
+        line-height: 30px;
+        padding: 8px 24px;
+        text-decoration: none;
+      }
+
+        nav[role="main"] > ul > li:hover {
+          background-color: #473B3C;
+        }
+
+        nav[role="main"] > ul > li:hover > a {
+          color: rgb( 255, 255, 255 );
+        }
+
+        nav[role="main"] > ul > li:hover > a > .caret {
+          border-top-color: rgb( 255, 255, 255 );
+        }
+      
+    nav[role="main"] > ul > li > div {
+		background-color:rgba(255,255,255,0.90);
+		border-top: 1.5px solid #473B3C;
+		border-right: 1.5px solid #473B3C;
+		border-left: 1.5px solid #473B3C;
+		border-bottom: 1.5px solid #473B3C;
+		
+		display: inline;
+		list-style: none;
+		opacity: 0.60;
+		margin-left:-90px;
+		width: 933px;/*51.8%*/
+		position: absolute;
+		visibility: hidden;
+		text-align: center;
+		-webkit-transiton: opacity 0.2s;
+		-moz-transition: opacity 0.2s;
+		-ms-transition: opacity 0.2s;
+		-o-transition: opacity 0.2s;
+		-transition: opacity 0.2s;
+    }
+	  
+	
+        nav[role="main"] > ul > li:hover > div {
+         display:inline-block;
+          opacity: 1;
+          visibility: visible;
+		  text-align: left;
+		  
+		
+		  
+        }
+          nav[role="main"] > ul > li > div ul > li {
+            width:230px;
+          }
+		 
+
+            nav[role="main"] > ul > li > div ul > li > a {
+              color: black;
+              display: block;
+              padding: 6px 20px;
+              text-decoration: none;
+            }
+
+			 nav[role="main"] > ul > li > div ul > li:hover{
+                background-color: #473B3C;
+			  }
+
+              nav[role="main"] > ul > li > div ul > li:hover > a {
+                 color: white;
+			  }

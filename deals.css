@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+#div-WtE9pbFbkB {
+	height: auto;
+	margin-top: 0px;
+	margin-right: -55px;
+	margin-left: -55px;
+	padding-bottom: auto;
+	bottom: 0px;
+}
+.backNnext{
+	width:150px;
+	height:40px;
+	background-color:#421B1C;
+	color:white;
+	opacity:0.7;
+}
+.promotion{
+	padding:50px 0;
+}
+.dealsTitle{
+	margin: 0 0 0 50px;
+}
+.test{
+	width:500px;
+	padding:20px 0;
+	margin:0 auto;
+	background-color:white;
+	border:3px solid #dedede;
+}
+.dealsImg{
+	width:450px;
+	height:600px;
+	border: 2px solid #dedede;
+		
+}
